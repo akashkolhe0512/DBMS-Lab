@@ -14,3 +14,5 @@ SELECT Name,Location,Phone_Number From databaseTable Where RollNo IN (Select Rol
 Create Table Demo(Name VARCHAR(40),RollNo Int(5),Section VARCHAR(10));
 Insert Into Demo Select * From StudentTable;*/
 SelecT * From Demo;
+Delete From Demo Where RollNo in (Select RollNo From StudentTable Where Name='Raj');
+Update Demo set Name='Om' Where Section In (Select Section From StudentTable Where Name='Ravi');
